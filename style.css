@@ -20,7 +20,7 @@ a {
 }
 
 .header {
-    min-height: 8vh;
+    min-height: 6vh;
     background: #17141459;
 
 }
@@ -39,40 +39,49 @@ a {
 }
 
 .header .navbar .logo a {
-    color: #fff;
+    color: whitesmoke;
 
 }
 
 .header .navbar .logo span {
     color: crimson;
-    text-transform: uppercase
+    text-transform: uppercase;
+}
+
+.header .navbar .logo a:hover {
+    color: crimson;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.header .navbar .logo a:hover span {
+    color: #fff;
 }
 
 .header .navbar .hambarger {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #000;
     border-radius: 50%;
     position: relative;
-    top: 8px;
-    right: 10px;
+    top: 6px;
     cursor: pointer;
     z-index: 1;
     margin-right: 20px;
+    transform: scale(.8);
 }
 
 .header .navbar .hambarger::after {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     border: 1px solid #000;
     border-radius: 50%;
     transform: scale(0);
 }
 
 .header .navbar .hambarger:hover:after {
-    animation: pauls 1s ease-in-out;
+    animation: pauls 1s ease infinite;
 }
 
 /* keyframes  start */
@@ -95,9 +104,9 @@ a {
     background: #000;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 25%;
     transition: .5s ease-in-out;
-    transform: translate(-50%)scale(1);
+    /*    transform: translate(-50%)scale(1);*/
 
 }
 
@@ -105,8 +114,8 @@ a {
 .navbar .hambarger .bar::before {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 2px;
+    width: 100%;
+    height: 100%;
     background: #000;
     transition: .5s ease-in-out;
 
@@ -120,11 +129,11 @@ a {
     bottom: 8px
 }
 
-.navbar .nav-list .active .bar::after {
+.navbar .active .bar::after {
     top: 0;
 }
 
-.navbar .nav-list .active .bar::before {
+.navbar .active .bar::before {
     bottom: 0;
 }
 
@@ -155,4 +164,10 @@ a {
 
 .header .navbar .menu li a {
     text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.header .navbar .menu li a:hover {
+    color: crimson;
+    text-shadow: 1px 1px 1px #000;
 }

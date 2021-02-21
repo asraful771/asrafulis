@@ -1,18 +1,23 @@
 @media screen and (min-width:1100px) {
+
+    .header .navbar {
+        padding-top: 6px
+    }
+
     .header .navbar .hambarger {
         display: none;
     }
 
     .header .navbar .menu {
         display: block;
-        position:initial;
+        position: initial;
         background: transparent;
-        height:auto;
-        width:fit-content;
+        height: auto;
+        width: fit-content;
     }
 
-    .header .navbar .menu li{
-        display:inline-block
+    .header .navbar .menu li {
+        display: inline-block
     }
 
 
