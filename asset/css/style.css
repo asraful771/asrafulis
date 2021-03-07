@@ -1,3 +1,6 @@
+/************************************
+            common css start 
+  ************************************/
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +16,22 @@ ul {
 a {
     text-decoration: none;
 }
+.f-size{
+    font-size: 14px;
+}
+.custom-btn{
+    background:#1DBF73;
+    color:#fff;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+.custom-btn:hover{
+    box-shadow:0px 1px 9px rgb(99, 96, 96);
+    color:#fff;
+}
+/************************************
+            common css end
+  ************************************/
 
 #header {
     position: fixed;
@@ -20,7 +39,7 @@ a {
     left: 0;
     width: 100vw;
     height: auto;
-    background: #252525ad;
+    background: #25252573;
     z-index: 100;
   
 }
@@ -50,12 +69,12 @@ a {
 }
 
 .header .navbar .logo span {
-    color: crimson;
+    color: #1DBF73;
     text-transform: uppercase;
 }
 
 .header .navbar .logo a:hover {
-    color: crimson;
+    color: #1DBF73;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.315);
 }
 
@@ -90,20 +109,7 @@ a {
     animation: pauls 1s ease infinite;
 }
 
-/* keyframes  start */
-@keyframes pauls {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
 
-    100% {
-        opacity: 0;
-        transform: scale(1.5);
-    }
-}
-
-/* keyframes  end */
 .navbar .hambarger .bar {
     width: 20px;
     height: 2px;
@@ -174,9 +180,12 @@ a {
 }
 
 .header .navbar .menu li a:hover {
-    color: crimson;
+    color: #1DBF73;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.315);
 }
+/* ************************************
+         header section end
+************************************* */
 /* project section start */
 
 .owl-nav .owl-prev,
@@ -195,6 +204,7 @@ a {
 .owl-nav .owl-next{
     right:0;
 }
+
 .owl-carousel:hover .owl-nav .owl-prev,
 .owl-carousel:hover .owl-nav .owl-next{
     transform: scale(1);
@@ -202,6 +212,12 @@ a {
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+    color:#1DBF73;
+}
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-next:hover{
+    color:#fff;
+    background:#1DBF73;
 }
 .owl-carousel .owl-nav .owl-prev,
 .owl-carousel .owl-nav .owl-next{
@@ -216,7 +232,121 @@ a {
     font-size:14px;
 }
 .project-btn:hover{
-    background:#252525ad;
+    background:#1DBF73;
     color:whitesmoke;
 }
 /* project section end  */
+
+/* about section start */
+
+.img-content img{
+    height:500px;
+    padding:2px;
+    border: 1px solid #1DBF73;
+}
+/* .heir-btn{
+    background:#1DBF73;
+    color:#fff;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+.heir-btn:hover{
+    box-shadow:0px 1px 9px rgb(99, 96, 96);
+    color:#fff;
+} */
+.contact-social a{
+    color:#1DBF73;
+    font-size:2rem;
+    transition:.1s ease-in-out;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transition:.1s ease-in-out;
+    -moz-transition:.1s ease-in-out;
+    -ms-transition:.1s ease-in-out;
+    -o-transition:.1s ease-in-out;
+}
+.contact-social a:hover{
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+}
+/* about section end */
+
+
+/* keyframes  start */
+/* menu start */
+@keyframes pauls {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+/* menu end */
+
+/* common end */
+/* keyframes  end */
+
+
+/* amnimation start */
+
+.anim{
+    position:relative;
+}
+.anim::before{
+    content:'';
+    position:absolute;
+    top:90%;
+    left:45%;
+    width:40px;
+    height:2px;
+    background: red;
+    animation: line 3s ease infinite;
+    -webkit-animation: line 3s ease infinite;
+}
+.anim::after{
+    content:'';
+    position:absolute;
+    top:90%;
+    left:52%;
+    width:40px;
+    height:2px;
+    background: #1DBF73;
+    animation: line 3s ease infinite;
+    -webkit-animation: line 3s ease infinite;
+}
+
+@keyframes line{
+    0%{
+        transform: scale(.1);
+        -webkit-transform: scale(.1);
+        -moz-transform: scale(.1);
+        -ms-transform: scale(.1);
+        -o-transform: scale(.1);
+    }
+    50%{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+    
+    100%{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+}
+/* animatin end */
