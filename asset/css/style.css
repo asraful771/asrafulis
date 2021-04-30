@@ -310,6 +310,18 @@ a {
 /* about section end */
 
 
+
+/* footer start */
+.last{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+/* footer end */
+
+
+
+
 /* keyframes  start */
 /* menu start */
 @keyframes pauls {
